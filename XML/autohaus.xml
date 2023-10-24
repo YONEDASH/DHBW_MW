@@ -23,7 +23,9 @@
                 <Kraftstoff>Benzin</Kraftstoff>
             </Motor>
         </Motoren>
-        <Fahrwerk typ="RWD" />
+        <Fahrwerk>
+            <Typ>RWD</Typ>
+        </Fahrwerk>
         <Schaltung>
             <Gaenge>6</Gaenge>
             <Art>Manuell</Art>
@@ -52,7 +54,9 @@
                 <Kraftstoff>Benzin</Kraftstoff>
             </Motor>
         </Motoren>
-        <Fahrwerk typ="RWD"/>
+        <Fahrwerk>
+            <Typ>RWD</Typ>
+        </Fahrwerk>
         <Schaltung>
             <Gaenge>5</Gaenge>
             <Art>Manuell</Art>
@@ -88,7 +92,9 @@
                 <Kraftstoff>Strom</Kraftstoff>
             </Motor>
         </Motoren>
-        <Fahrwerk typ="RWD"/>
+        <Fahrwerk>
+            <Typ>RWD</Typ>
+        </Fahrwerk>
         <Schaltung>
             <Gaenge>7</Gaenge>
             <Art>Automatik</Art>
@@ -117,7 +123,9 @@
                 <Kraftstoff>Benzin</Kraftstoff>
             </Motor>
         </Motoren>
-        <Fahrwerk typ="RWD"/>
+        <Fahrwerk>
+            <Typ>RWD</Typ>
+        </Fahrwerk>
         <Schaltung>
             <Gaenge>9</Gaenge>
             <Art>Automatik</Art>
@@ -146,7 +154,9 @@
                 <Kraftstoff>Benzin</Kraftstoff>
             </Motor>
         </Motoren>
-        <Fahrwerk typ="AWD"/>
+        <Fahrwerk>
+            <Typ>AWD</Typ>
+        </Fahrwerk>
         <Schaltung>
             <Gaenge>8</Gaenge>
             <Art>Automatik</Art>
@@ -175,7 +185,9 @@
                 <Kraftstoff>Benzin</Kraftstoff>
             </Motor>
         </Motoren>
-        <Fahrwerk typ="RWD"/>
+        <Fahrwerk>
+            <Typ>RWD</Typ>
+        </Fahrwerk>
         <Schaltung>
             <Gaenge>8</Gaenge>
             <Art>Automatik</Art>
