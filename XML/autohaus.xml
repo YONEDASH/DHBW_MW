@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="portfolio.xsd">
+    <Auto id="P-2G3RS">
+        <Marke>Porsche</Marke>
+        <Name>911 GT3 R rennsport (992)</Name>
+        <Kategorie>Sportscar</Kategorie>
+        <Erscheinungsjahr>2023</Erscheinungsjahr>
+        <Gewicht>
+            <Gewichtswert>1240</Gewichtswert>
+            <Gewichtseinheit>kg</Gewichtseinheit>
+        </Gewicht>
+        <Preis>
+            <Preiswert>951000</Preiswert>
+            <Preiseinheit>Euro</Preiseinheit>
+        </Preis>
+        <Motoren>
+            <Motor>
+                <Power>
+                    <Powerwert>629</Powerwert>
+                    <Powereinheit>hp</Powereinheit>
+                </Power>
+                <Bezeichnung>Boxer Motor</Bezeichnung>
+                <Kraftstoff>Benzin</Kraftstoff>
+            </Motor>
+        </Motoren>
+        <Fahrwerk typ="RWD" />
+        <Schaltung>
+            <Gaenge>6</Gaenge>
+            <Art>Manuell</Art>
+        </Schaltung>
+    </Auto>
+    <Auto id="M-RX7FD">
+        <Marke>Mazda</Marke>
+        <Name>RX-7</Name>
+        <Kategorie>Sportscar</Kategorie>
+        <Erscheinungsjahr>1997</Erscheinungsjahr>
+        <Gewicht>
+            <Gewichtswert>1325</Gewichtswert>
+            <Gewichtseinheit>kg</Gewichtseinheit>
+        </Gewicht>
+        <Preis>
+            <Preiswert>34000</Preiswert>
+            <Preiseinheit>Euro</Preiseinheit>
+        </Preis>
+        <Motoren>
+            <Motor>
+                <Power>
+                    <Powerwert>239</Powerwert>
+                    <Powereinheit>hp</Powereinheit>
+                </Power>
+                <Bezeichnung>Wankelmoor mit zwei Rotoren</Bezeichnung>
+                <Kraftstoff>Benzin</Kraftstoff>
+            </Motor>
+        </Motoren>
+        <Fahrwerk typ="RWD"/>
+        <Schaltung>
+            <Gaenge>5</Gaenge>
+            <Art>Manuell</Art>
+        </Schaltung>
+    </Auto>
+    <Auto id="L-P1M15">
+        <Marke>McLaren</Marke>
+        <Name>P1</Name>
+        <Kategorie>Hypercar</Kategorie>
+        <Erscheinungsjahr>2015</Erscheinungsjahr>
+        <Gewicht>
+            <Gewichtswert>1490</Gewichtswert>
+            <Gewichtseinheit>kg</Gewichtseinheit>
+        </Gewicht>
+        <Preis>
+            <Preiswert>1350000</Preiswert>
+            <Preiseinheit>Euro</Preiseinheit>
+        </Preis>
+        <Motoren>
+            <Motor>
+                <Power>
+                    <Powerwert>726</Powerwert>
+                    <Powereinheit>hp</Powereinheit>
+                </Power>
+                <Bezeichnung>V8 SSG</Bezeichnung>
+                <Kraftstoff>Benzin</Kraftstoff>
+            </Motor>
+            <Motor>
+                <Power>
+                    <Powerwert>177</Powerwert>
+                    <Powereinheit>hp</Powereinheit>
+                </Power>
+                <Kraftstoff>Strom</Kraftstoff>
+            </Motor>
+        </Motoren>
+        <Fahrwerk typ="RWD"/>
+        <Schaltung>
+            <Gaenge>7</Gaenge>
+            <Art>Automatik</Art>
+        </Schaltung>
+    </Auto>
+    <Auto id="K-JSK21">
+        <Marke>Koenigsegg</Marke>
+        <Name>Jesko</Name>
+        <Kategorie>Hypercar</Kategorie>
+        <Erscheinungsjahr>2021</Erscheinungsjahr>
+        <Gewicht>
+            <Gewichtswert>1420</Gewichtswert>
+            <Gewichtseinheit>kg</Gewichtseinheit>
+        </Gewicht>
+        <Preis>
+            <Preiswert>3000000</Preiswert>
+            <Preiseinheit>Euro</Preiseinheit>
+        </Preis>
+        <Motoren>
+            <Motor>
+                <Power>
+                    <Powerwert>1281</Powerwert>
+                    <Powereinheit>hp</Powereinheit>
+                </Power>
+                <Bezeichnung>twin-turbo charged V8</Bezeichnung>
+                <Kraftstoff>Benzin</Kraftstoff>
+            </Motor>
+        </Motoren>
+        <Fahrwerk typ="RWD"/>
+        <Schaltung>
+            <Gaenge>9</Gaenge>
+            <Art>Automatik</Art>
+        </Schaltung>
+    </Auto>
+    <Auto id="B-CGT21">
+        <Marke>Bentley</Marke>
+        <Name>Continental GT Speed</Name>
+        <Kategorie>Luxus</Kategorie>
+        <Erscheinungsjahr>2021</Erscheinungsjahr>
+        <Gewicht>
+            <Gewichtswert>2273</Gewichtswert>
+            <Gewichtseinheit>kg</Gewichtseinheit>
+        </Gewicht>
+        <Preis>
+            <Preiswert>380000</Preiswert>
+            <Preiseinheit>Euro</Preiseinheit>
+        </Preis>
+        <Motoren>
+            <Motor>
+                <Power>
+                    <Powerwert>650</Powerwert>
+                    <Powereinheit>hp</Powereinheit>
+                </Power>
+                <Bezeichnung>W12</Bezeichnung>
+                <Kraftstoff>Benzin</Kraftstoff>
+            </Motor>
+        </Motoren>
+        <Fahrwerk typ="AWD"/>
+        <Schaltung>
+            <Gaenge>8</Gaenge>
+            <Art>Automatik</Art>
+        </Schaltung>
+    </Auto>
+    <Auto id="R-PHTM7">
+        <Marke>Rolls Royce</Marke>
+        <Name>Phantom VIII</Name>
+        <Kategorie>Luxus</Kategorie>
+        <Erscheinungsjahr>2018</Erscheinungsjahr>
+        <Gewicht>
+            <Gewichtswert>2610</Gewichtswert>
+            <Gewichtseinheit>kg</Gewichtseinheit>
+        </Gewicht>
+        <Preis>
+            <Preiswert>570000</Preiswert>
+            <Preiseinheit>Euro</Preiseinheit>
+        </Preis>
+        <Motoren>
+            <Motor>
+                <Power>
+                    <Powerwert>563</Powerwert>
+                    <Powereinheit>hp</Powereinheit>
+                </Power>
+                <Bezeichnung>N74B68</Bezeichnung>
+                <Kraftstoff>Benzin</Kraftstoff>
+            </Motor>
+        </Motoren>
+        <Fahrwerk typ="RWD"/>
+        <Schaltung>
+            <Gaenge>8</Gaenge>
+            <Art>Automatik</Art>
+        </Schaltung>
+    </Auto>
+</Portfolio>

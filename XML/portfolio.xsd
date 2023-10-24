@@ -1,0 +1,144 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="KategorieType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Sportscar"/>
+            <xs:enumeration value="Hypercar"/>
+            <xs:enumeration value="Luxus"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="GewichtseinheitType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="kg"/>
+            <xs:enumeration value="t"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PowereinheitType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="hp"/>
+            <xs:enumeration value="kwh"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PreiseinheitType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Euro"/>
+            <xs:enumeration value="Dollar"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="KraftstoffType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Diesel"/>
+            <xs:enumeration value="Benzin"/>
+            <xs:enumeration value="Strom"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="FahrwerkType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FWD"/>
+            <xs:enumeration value="RWD"/>
+            <xs:enumeration value="AWD"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="SchaltungType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Automatik"/>
+            <xs:enumeration value="Manuell"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AutoIdType">
+        <xs:restriction base="xs:string">
+            <xs:length value="7" />
+            <xs:pattern value="[a-zA-Z]-[a-zA-Z0-9]{5}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AutoIdentifier">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="Portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Auto" maxOccurs="unbounded" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation> Verwendungzweck: Datenbasis für Autos, um in Onlinekatalog angezeigt zu werden. </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="AutoIdentifier" name="Marke"/>
+                            <xs:element type="AutoIdentifier" name="Name"/>
+                            <xs:element type="KategorieType" name="Kategorie"/>
+                            <xs:element type="xs:short" name="Erscheinungsjahr"/>
+                            <xs:element name="Gewicht">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:short" name="Gewichtswert"/>
+                                        <xs:element type="GewichtseinheitType" name="Gewichtseinheit"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Preis">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:int" name="Preiswert"/>
+                                        <xs:element type="PreiseinheitType" name="Preiseinheit"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Motoren">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Motor" maxOccurs="unbounded" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Power">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:short" name="Powerwert"/>
+                                                                <xs:element type="xs:string" name="Powereinheit"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="Bezeichnung" minOccurs="0"/>
+                                                    <xs:element type="KraftstoffType" name="Kraftstoff"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Fahrwerk">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="FahrwerkType" name="typ" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Schaltung">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:byte" name="Gaenge"/>
+                                        <xs:element type="SchaltungType" name="Art"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="AutoIdType" name="id" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
