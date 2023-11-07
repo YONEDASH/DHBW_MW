@@ -68,7 +68,7 @@ tr:not(:first-child)&gt;* {
                 <p>Sehr geehrter Kunde, hier ist eine aktuelle Liste unserer Fahrzeuge. Melden Sie sich bei uns mit der <bold>Id</bold> des Fahrzeugs, um eine Probefahrt zu vereinbaren.</p>
                 <table cellspacing="0" cellpadding="0">
                     <tr>
-                        <th>Id</th>
+                        <th>Nummer</th>
                         <th>Kategorie</th>
                         <th>Jahr</th>
                         <th>Marke</th>
