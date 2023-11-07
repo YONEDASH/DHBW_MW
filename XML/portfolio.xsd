@@ -101,12 +101,12 @@
     </xs:simpleType>
 
     <xs:element name="Portfolio">
+        <xs:annotation>
+            <xs:documentation> Verwendungzweck: Datenbasis für Autos, um in Onlinekatalog angezeigt zu werden. </xs:documentation>
+        </xs:annotation>
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="Auto" maxOccurs="unbounded" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation> Verwendungzweck: Datenbasis für Autos, um in Onlinekatalog angezeigt zu werden. </xs:documentation>
-                    </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element type="AutoIdentifierType" name="Marke"/>
