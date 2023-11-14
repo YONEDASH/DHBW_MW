@@ -1,0 +1,12 @@
+{
+    "name": "Hans Wurst",
+    "age": 42,
+    "children": [
+        "Werner Wurst",
+        "Waltraud Wurst"
+    ],
+    "profession": {
+        "title": "Clown",
+        "salary": 42690
+    }
+}

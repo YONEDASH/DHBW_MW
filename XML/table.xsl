@@ -5,8 +5,8 @@
 
     <xsl:template match="/">
         <html>
-            <!-- <link rel="stylesheet" href="style.css"/> -->
-            <style>
+            <head>
+                <style>
 html {
     font-family: Arial, system-ui;
 }
@@ -17,13 +17,16 @@ table {
     border-radius: 25px;
     overflow: hidden;
     border-collapse: collapse;
-    ;
 }
 
 th,
 td {
     text-align: center;
     padding: 10px;
+}
+
+td:not(:first-child) {
+    text-shadow: #fff 1px 1px 0.1rem;
 }
 
 td:first-child {
@@ -36,9 +39,10 @@ td:nth-child(3) {
 
 th {
     color: #fff;
-    background: #000;
+    background: linear-gradient(#FFE100 10%, #FFC94D);
     margin: 0;
     border: none;
+    text-shadow: #000 1px 1px 0.1rem;
 }
 
 th:first-child {
@@ -58,6 +62,18 @@ th:last-child {
     min-width: 100px;
 }
 
+td:first-child,
+td:nth-child(4) {
+    color: white;
+    background: linear-gradient(180deg, #a2a2a2 10%, #c7c7c7 60%, #a2a2a2 90%);
+    text-shadow: #000 1px 1px 0.1rem;
+}
+
+td:nth-child(4) {
+    background: linear-gradient(#FFC94D 10%, #FFE100 60%, #FFC94D 90%);
+    font-weight: 800;
+}
+
 tr:not(:first-child)&gt;* {
     border: #fff solid 0.1px;
 }
@@ -65,12 +81,14 @@ tr:not(:first-child)&gt;* {
 .bold {
     font-weight: 800;
 }
-            </style>
+                </style>
+            </head>
             <body>
                 <h1>Autohaus LUX</h1>
                 <h2>Unser Portfolio</h2>
-                <p>Sehr geehrter Kunde, hier ist eine aktuelle Liste unserer Fahrzeuge. Melden Sie sich bei uns mit der <span class="bold">Nummer</span> des Fahrzeugs, um eine Probefahrt zu vereinbaren.</p>
-                <table cellspacing="0" cellpadding="0">
+                <p>Sehr geehrter Kunde, hier ist eine aktuelle Liste unserer Fahrzeuge. Melden Sie sich bei uns mit der <span class="bold">Nummer</span> des Fahrzeugs, um eine Probefahrt zu vereinbaren.
+Des weiteren können Sie den Preis hier einsehen, falls Sie sich für einen Kauf entscheiden.</p>
+                <table>
                     <tr>
                         <th>Nummer</th>
                         <th>Kategorie</th>

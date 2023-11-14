@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Person>
+    <Name>Hans Wurst</Name>
+    <Age>42</Age>
+    <Children>
+        <Child>Werner Wurst</Child>
+        <Child>Waltraud Wurst</Child>
+    </Children>
+    <Profession>
+        <Title>Clown</Title>
+        <Salary>42690</Salary>
+    </Profession>
+</Person>
