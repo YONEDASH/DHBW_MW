@@ -6,6 +6,7 @@
     <xsl:template match="/">
         <html>
             <head>
+                <link rel="stylesheet" href="_table.css"/>
                 <style>
 html {
     font-family: Arial, system-ui;
