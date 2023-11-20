@@ -6,15 +6,45 @@
     <xsl:template match="/">
         <html>
             <head>
-                <link rel="stylesheet" href="_table.css"/>
+                <!-- <link rel="stylesheet" href="_table.css"/> -->
                 <style>
 html {
     font-family: Arial, system-ui;
 }
 
+body {
+    margin: 10px;
+    color: #FFE100;
+    text-shadow: #000 1px 1px 1rem;
+    background-color: #000;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#bg {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(0.3rem);
+}
+
+#bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 table {
     border: none;
-    background: #d0d0d0;
+    background: #d0d0d099;
+    color: #fff;
+    backdrop-filter: blur(1rem);
     border-radius: 25px;
     overflow: hidden;
     border-collapse: collapse;
@@ -27,7 +57,7 @@ td {
 }
 
 td:not(:first-child) {
-    text-shadow: #fff 1px 1px 0.1rem;
+    text-shadow: #000 1px 1px 0.1rem;
 }
 
 td:first-child {
@@ -71,8 +101,8 @@ td:nth-child(4) {
 }
 
 td:nth-child(4) {
-    background: linear-gradient(#FFC94D 10%, #FFE100 60%, #FFC94D 90%);
     font-weight: 800;
+    background: linear-gradient(#FFC94D 10%, #FFE100 60%, #FFC94D 90%);
 }
 
 tr:not(:first-child)&gt;* {
@@ -85,6 +115,9 @@ tr:not(:first-child)&gt;* {
                 </style>
             </head>
             <body>
+                <div id="bg">
+                    <img src="https://pictures.dealer.com/e/earthmotorcars/1746/9c592a242fad8520c6364704ed9dd529x.jpg?impolicy=downsize_bkpt&gt;w=2000" />
+                </div>
                 <h1>Autohaus LUX</h1>
                 <h2>Unser Portfolio</h2>
                 <p>Sehr geehrter Kunde, hier ist eine aktuelle Liste unserer Fahrzeuge. Melden Sie sich bei uns mit der <span class="bold">Nummer</span> des Fahrzeugs, um eine Probefahrt zu vereinbaren.

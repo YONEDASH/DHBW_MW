@@ -1,196 +1,282 @@
 <html>
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="_table.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html {
+    font-family: Arial, system-ui;
+}
+
+body {
+    margin: 10px;
+    color: #FFE100;
+    text-shadow: #000 1px 1px 1rem;
+    background-color: #000;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#bg {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(0.3rem);
+}
+
+#bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+table {
+    border: none;
+    background: #d0d0d099;
+    color: #fff;
+    backdrop-filter: blur(1rem);
+    border-radius: 25px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+td:not(:first-child) {
+    text-shadow: #000 1px 1px 0.1rem;
+}
+
+td:first-child {
+    font-weight: 800;
+}
+
+td:nth-child(3) {
+    font-weight: 600;
+}
+
+th {
+    color: #fff;
+    background: linear-gradient(#FFE100 10%, #FFC94D);
+    margin: 0;
+    border: none;
+    text-shadow: #000 1px 1px 0.1rem;
+}
+
+th:first-child {
+    min-width: 80px;
+}
+
+th:nth-child(5) {
+    min-width: 100px;
+}
+
+th:nth-child(6) {
+    min-width: 100px;
+}
+
+th:first-child,
+th:last-child {
+    min-width: 100px;
+}
+
+td:first-child,
+td:nth-child(4) {
+    color: white;
+    background: linear-gradient(180deg, #a2a2a2 10%, #c7c7c7 60%, #a2a2a2 90%);
+    text-shadow: #000 1px 1px 0.1rem;
+}
+
+td:nth-child(4) {
+    font-weight: 800;
+    background: linear-gradient(#FFC94D 10%, #FFE100 60%, #FFC94D 90%);
+}
+
+tr:not(:first-child)>* {
+    border: #fff solid 0.1px;
+}
+
+.bold {
+    font-weight: 800;
+}
+                </style>
 </head>
-
 <body>
-    <div id="bg">
-        <img
-            src="https://pictures.dealer.com/e/earthmotorcars/1746/9c592a242fad8520c6364704ed9dd529x.jpg?impolicy=downsize_bkpt&w=2000" />
-    </div>
-    <h1>Autohaus LUX</h1>
-    <h2>Unser Portfolio</h2>
-    <p>Sehr geehrter Kunde, hier ist eine aktuelle Liste unserer Fahrzeuge. Melden Sie sich bei uns mit der <span
-            class="bold">Nummer</span> des Fahrzeugs, um eine Probefahrt zu vereinbaren.
-        Des weiteren können Sie den Preis hier einsehen, falls Sie sich für einen Kauf entscheiden.</p>
-    <table>
-        <tr>
-            <th>Nummer</th>
-            <th>Kategorie</th>
-            <th>Jahr</th>
-            <th>Marke</th>
-            <th>Name</th>
-            <th>Preis</th>
-            <th>Fahrwerk</th>
-            <th>Schaltung</th>
-            <th>Gewicht</th>
-            <th>Motor(en)</th>
-            <th>Kraftstoff</th>
-        </tr>
-        <tr>
-            <td>P-2G3RS</td>
-            <td>Sportscar</td>
-            <td>2023</td>
-            <td>Porsche</td>
-            <td>911 GT3 R rennsport (992)</td>
-            <td>
-                951000
-                Euro
-            </td>
-            <td>
-                RWD
-            </td>
-            <td>
-                <p>Manuell<span>, </span><br>6<span> Gänge</span></p>
-            </td>
-            <td>
-                1240
-                kg
-            </td>
-            <td>
-                629
-                hp
+<div id="bg"><img src="https://pictures.dealer.com/e/earthmotorcars/1746/9c592a242fad8520c6364704ed9dd529x.jpg?impolicy=downsize_bkpt&gt;w=2000"></div>
+<h1>Autohaus LUX</h1>
+<h2>Unser Portfolio</h2>
+<p>Sehr geehrter Kunde, hier ist eine aktuelle Liste unserer Fahrzeuge. Melden Sie sich bei uns mit der <span class="bold">Nummer</span> des Fahrzeugs, um eine Probefahrt zu vereinbaren.
+Des weiteren können Sie den Preis hier einsehen, falls Sie sich für einen Kauf entscheiden.</p>
+<table>
+<tr>
+<th>Nummer</th>
+<th>Kategorie</th>
+<th>Jahr</th>
+<th>Marke</th>
+<th>Name</th>
+<th>Preis</th>
+<th>Fahrwerk</th>
+<th>Schaltung</th>
+<th>Gewicht</th>
+<th>Motor(en)</th>
+<th>Kraftstoff</th>
+</tr>
+<tr>
+<td>P-2G3RS</td>
+<td>Sportscar</td>
+<td>2023</td>
+<td>Porsche</td>
+<td>911 GT3 R rennsport (992)</td>
+<td>
+            951000
+            Euro
+        </td>
+<td>
+            RWD
+        </td>
+<td><p>Manuell<span>, </span><br>6<span> Gänge</span></p></td>
+<td>
+            1240
+            kg
+        </td>
+<td>
+                    629
+                    hp
                 Boxer Motor</td>
-            <td>Benzin</td>
-        </tr>
-        <tr>
-            <td>M-RX7FD</td>
-            <td>Sportscar</td>
-            <td>1997</td>
-            <td>Mazda</td>
-            <td>RX-7</td>
-            <td>
-                34000
-                Euro
-            </td>
-            <td>
-                RWD
-            </td>
-            <td>
-                <p>Manuell<span>, </span><br>5<span> Gänge</span></p>
-            </td>
-            <td>
-                1325
-                kg
-            </td>
-            <td>
-                239
-                hp
+<td>Benzin</td>
+</tr>
+<tr>
+<td>M-RX7FD</td>
+<td>Sportscar</td>
+<td>1997</td>
+<td>Mazda</td>
+<td>RX-7</td>
+<td>
+            34000
+            Euro
+        </td>
+<td>
+            RWD
+        </td>
+<td><p>Manuell<span>, </span><br>5<span> Gänge</span></p></td>
+<td>
+            1325
+            kg
+        </td>
+<td>
+                    239
+                    hp
                 Wankelmoor mit zwei Rotoren</td>
-            <td>Benzin</td>
-        </tr>
-        <tr>
-            <td>L-P1M15</td>
-            <td>Hypercar</td>
-            <td>2015</td>
-            <td>McLaren</td>
-            <td>P1</td>
-            <td>
-                1350000
-                Euro
-            </td>
-            <td>
-                RWD
-            </td>
-            <td>
-                <p>Automatik<span>, </span><br>7<span> Gänge</span></p>
-            </td>
-            <td>
-                1490
-                kg
-            </td>
-            <td>
-                726
-                hp
-                V8 SSG &amp;
-                177
-                hp
-
-                Motor
-            </td>
-            <td>Benzin &amp; Strom</td>
-        </tr>
-        <tr>
-            <td>K-JSK21</td>
-            <td>Hypercar</td>
-            <td>2021</td>
-            <td>Koenigsegg</td>
-            <td>Jesko</td>
-            <td>
-                3000000
-                Euro
-            </td>
-            <td>
-                RWD
-            </td>
-            <td>
-                <p>Automatik<span>, </span><br>9<span> Gänge</span></p>
-            </td>
-            <td>
-                1420
-                kg
-            </td>
-            <td>
-                1281
-                hp
+<td>Benzin</td>
+</tr>
+<tr>
+<td>L-P1M15</td>
+<td>Hypercar</td>
+<td>2015</td>
+<td>McLaren</td>
+<td>P1</td>
+<td>
+            1350000
+            Euro
+        </td>
+<td>
+            RWD
+        </td>
+<td><p>Automatik<span>, </span><br>7<span> Gänge</span></p></td>
+<td>
+            1490
+            kg
+        </td>
+<td>
+                    726
+                    hp
+                V8 SSG &amp; 
+                    177
+                    hp
+                
+                                        Motor
+                                        </td>
+<td>Benzin &amp; Strom</td>
+</tr>
+<tr>
+<td>K-JSK21</td>
+<td>Hypercar</td>
+<td>2021</td>
+<td>Koenigsegg</td>
+<td>Jesko</td>
+<td>
+            3000000
+            Euro
+        </td>
+<td>
+            RWD
+        </td>
+<td><p>Automatik<span>, </span><br>9<span> Gänge</span></p></td>
+<td>
+            1420
+            kg
+        </td>
+<td>
+                    1281
+                    hp
                 twin-turbo charged V8</td>
-            <td>Benzin</td>
-        </tr>
-        <tr>
-            <td>B-CGT21</td>
-            <td>Luxus</td>
-            <td>2021</td>
-            <td>Bentley</td>
-            <td>Continental GT Speed</td>
-            <td>
-                380000
-                Euro
-            </td>
-            <td>
-                AWD
-            </td>
-            <td>
-                <p>Automatik<span>, </span><br>8<span> Gänge</span></p>
-            </td>
-            <td>
-                2273
-                kg
-            </td>
-            <td>
-                650
-                hp
+<td>Benzin</td>
+</tr>
+<tr>
+<td>B-CGT21</td>
+<td>Luxus</td>
+<td>2021</td>
+<td>Bentley</td>
+<td>Continental GT Speed</td>
+<td>
+            380000
+            Euro
+        </td>
+<td>
+            AWD
+        </td>
+<td><p>Automatik<span>, </span><br>8<span> Gänge</span></p></td>
+<td>
+            2273
+            kg
+        </td>
+<td>
+                    650
+                    hp
                 W12</td>
-            <td>Benzin</td>
-        </tr>
-        <tr>
-            <td>R-PHTM7</td>
-            <td>Luxus</td>
-            <td>2018</td>
-            <td>Rolls Royce</td>
-            <td>Phantom VIII</td>
-            <td>
-                570000
-                Euro
-            </td>
-            <td>
-                RWD
-            </td>
-            <td>
-                <p>Automatik<span>, </span><br>8<span> Gänge</span></p>
-            </td>
-            <td>
-                2610
-                kg
-            </td>
-            <td>
-                563
-                hp
+<td>Benzin</td>
+</tr>
+<tr>
+<td>R-PHTM7</td>
+<td>Luxus</td>
+<td>2018</td>
+<td>Rolls Royce</td>
+<td>Phantom VIII</td>
+<td>
+            570000
+            Euro
+        </td>
+<td>
+            RWD
+        </td>
+<td><p>Automatik<span>, </span><br>8<span> Gänge</span></p></td>
+<td>
+            2610
+            kg
+        </td>
+<td>
+                    563
+                    hp
                 N74B68</td>
-            <td>Benzin</td>
-        </tr>
-    </table>
+<td>Benzin</td>
+</tr>
+</table>
 </body>
-
 </html>
